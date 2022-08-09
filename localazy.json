@@ -1,0 +1,37 @@
+{
+  "upload": {
+    "type": "json",
+    "deprecateMissing": true,
+    "files": [
+      {
+        "pattern": ".cache/admin/src/translations/en.json",
+        "features": [
+          "filter_untranslated"
+        ],
+        "lang": "inherited",
+        "path": "${path}"
+      },
+      {
+        "group": "non-source",
+        "pattern": ".cache/admin/src/translations/*.json",
+        "excludes": [
+          ".cache/admin/src/translations/en.json",
+          ".cache/admin/src/translations/languageNativeNames.js"
+        ],
+        "features": [
+          "filter_untranslated"
+        ],
+        "lang": "${autodetectLang}",
+        "path": "${path}"
+      }
+    ]
+  },
+  "download": {
+    "includeSourceLang": true,
+    "files": [
+      {
+        "output": "src/admin/src/translations/${lang}.json"
+      }
+    ]
+  }
+}
