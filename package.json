@@ -9,7 +9,6 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
     "@strapi/strapi": "4.3.2",
     "@strapi/plugin-users-permissions": "4.3.2",
