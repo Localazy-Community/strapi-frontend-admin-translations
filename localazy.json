@@ -1,4 +1,14 @@
 {
+  "transformations": [
+    {
+      "name": "autodetectLangModified",
+      "source": "${file}",
+      "operations": [
+        "substringBefore: .json",
+        "replace: dk, da"
+      ]
+    }
+  ],
   "upload": {
     "type": "json",
     "deprecateMissing": true,
@@ -21,7 +31,8 @@
         "features": [
           "filter_untranslated"
         ],
-        "lang": "${autodetectLang}",
+        "lang": "${autodetectLangModified}",
+        "file": "file.json",
         "path": "${path}"
       }
     ]

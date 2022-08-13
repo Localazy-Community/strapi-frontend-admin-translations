@@ -3,7 +3,7 @@ import fr from '../../../src/admin/src/translations/fr';
 import cs from '../../../src/admin/src/translations/cs';
 import de from '../../../src/admin/src/translations/de';
 // Strapi interprets Danish as "dk" (not "da", which is the ISO code)
-// import dk from '../../../src/admin/src/translations/dk';
+import da from '../../../src/admin/src/translations/da';
 import es from '../../../src/admin/src/translations/es';
 import he from '../../../src/admin/src/translations/he';
 import id from '../../../src/admin/src/translations/id';
@@ -34,7 +34,7 @@ const config = {
     'fr',
     'cs',
     'de',
-    // 'dk',
+    'dk',
     'es',
     'he',
     'id',
@@ -43,7 +43,7 @@ const config = {
     'ko',
     'ms',
     'nl',
-    // 'no',
+    'no',
     'pl',
     'pt-BR',
     'pt',
@@ -70,9 +70,9 @@ const config = {
     de: {
       ...de,
     },
-    // dk: {
-    //   ...dk,
-    // },
+    dk: {
+      ...da,
+    },
     es: {
       ...es,
     },
