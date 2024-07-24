@@ -41,3 +41,11 @@ Localazy and this boilerplate resolves these issues (see `app.js`).
 
 Currently, Strapi does not allow users to add other than the above languages. See [this issue](https://github.com/strapi/strapi/pull/13096) for more details.
 Hopefully, this will be fixed in the one of the future Strapi releases...
+
+## How to use this boilerplate
+
+The repository is currently updated manually, there's no automated pipeline involved (is a subject to change).
+
+The `readKey` is present in the `localazy.json` file. Thanks to that, lang resources can be always updated by anyone, by using Localazy CLI Tool and running `localazy download` command.
+
+To use those translations, follow the code example structure, and update your `app.js` file. Then, in Strapi, navigate to to the User Settings page and change the UI language.
