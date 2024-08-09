@@ -4,7 +4,9 @@
 
 ### 📦 `@localazy/strapi-frontend-admin-translations`
 
-Strapi boilerplate for frontend admin translations by Localazy.
+## Strapi Frontend Admin Translations Boilerplate by Localazy
+
+</br>
 
 The public project for managing translations is [Strapi Frontend Admin](https://localazy.com/p/strapi-frontend-admin) (you can contribute).
 
