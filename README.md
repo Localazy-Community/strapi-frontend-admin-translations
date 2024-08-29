@@ -14,6 +14,10 @@ This repository will be updated frequently with new translations and Strapi vers
 
 </div>
 
+## 🤝 Community
+
+This project is community supported. Strapi does not manage or update this repository.
+
 ## 🚀 How to use
 
 The repository is currently updated manually. 
