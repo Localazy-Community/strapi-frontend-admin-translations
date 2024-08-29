@@ -22,13 +22,13 @@ The repository is currently updated manually.
   "readKey": "a8120023039112376500-1d4129ec12f08f85b6892bf0955ad0d3af9aaabdfff8770e2be4e54102ee9546"
 ```
 
-The `readKey` is present in the `localazy.json` file, allowing anyone to update language resources using the Localazy CLI Tool by running the `localazy download` command.
+The `readKey` is present in the `localazy.json` file, allowing anyone to update language resources using the [Localazy CLI](https://localazy.com/docs/cli/the-basics#getting-started) Tool by running the `localazy download` command.
 
 ```bash
 localazy download
 ```
 
-- To use these translations, follow the code example structure and update your `app.js` file.
+- To use these translations, follow the code example structure from [`app.js`](/src/admin/app.js) and update your `app.js` file.
 - Then navigate to the **User Settings page** in **Strapi** to change the UI language.
 
 
