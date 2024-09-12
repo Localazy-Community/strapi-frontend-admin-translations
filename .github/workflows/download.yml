@@ -20,10 +20,6 @@ jobs:
         uses: localazy/download@v1
         with:
           config_file: localazy.json
-         
-      - name: List downloaded translation files
-        run: |
-          ls src/admin/src/translations/**/*.json
 
       - name: Check for changes
         run: |
