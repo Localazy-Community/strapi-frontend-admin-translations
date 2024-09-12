@@ -1,0 +1,43 @@
+name: Localazy Download for Strapi Frontend Admin
+
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch: 
+
+jobs:
+  localazy-download:
+    name: Download strings from Localazy for Strapi Frontend Admin
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Download translations from Localazy
+        uses: localazy/download@v1
+        with:
+          config_file: localazy.json
+         
+      - name: List downloaded translation files
+        run: |
+          ls src/admin/src/translations/**/*.json
+
+      - name: Check for changes
+        run: |
+          git add .
+          git diff --cached --exit-code || echo "Changes detected"
+
+      - name: Commit translation updates
+        run: |
+          git config --local user.email "tibor@localazy.com"
+          git config --local user.name "tibor-panak"
+          git commit -m "Update translations from Localazy" -a || echo "No changes to commit"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: master
