@@ -2,8 +2,10 @@ name: Localazy Download for Strapi Frontend Admin
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   workflow_dispatch: 
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
   localazy-download:
@@ -33,7 +35,7 @@ jobs:
           git commit -m "Update translations from Localazy" -a || echo "No changes to commit"
 
       - name: Push changes
-        uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: master
+          branch: main
