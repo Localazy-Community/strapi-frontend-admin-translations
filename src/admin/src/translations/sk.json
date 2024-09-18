@@ -1,9 +1,12 @@
 {
   "Analytics": "Analýzy",
   "Auth.components.Oops.text": "Váš účet bol pozastavený",
+  "Auth.components.Oops.text.admin": "Ak ide o chybu, kontaktujte svojho správcu.",
+  "Auth.components.Oops.title": "Ups...",
   "Auth.form.button.forgot-password": "Poslať e-mail",
   "Auth.form.button.go-home": "NASPÄŤ DOMOV",
   "Auth.form.button.login": "Prihlásiť sa",
+  "Auth.form.button.login.providers.error": "Nemôžeme vás spojiť prostredníctvom vybraného poskytovateľa.",
   "Auth.form.button.register": "Registrovať sa",
   "Auth.form.confirmPassword.label": "Potvrdenie hesla",
   "Auth.form.email.label": "E-mailová adresa",
